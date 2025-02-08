@@ -1,0 +1,41 @@
+.menu-kind {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 24px;
+}
+
+.menu-kind-container {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.menu-kind-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 44px;
+  padding: 2px;
+  border: 2px solid white;
+  object-fit: cover;
+}
+
+.menu-kind-text {
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.menu-kind-active {
+  .menu-kind-text {
+    border-bottom: 2px solid black;
+    font-weight: 600;
+  }
+
+  .menu-kind-img {
+    border: 2px solid #4f372f;
+  }
+}

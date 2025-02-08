@@ -1,0 +1,156 @@
+.main-container {
+  width: 1300px;
+  background: #eee;
+  margin: 0 auto;
+}
+
+.cart-title {
+  background: #F8F9FA;
+  font-size: 24px;
+  font-weight: 500;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+}
+
+.menu-cart {
+  height: 100%;
+}
+
+.cart-no-item {
+  padding: 24px;
+  font-size: 16px;
+}
+
+.cart-item-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.cart-item-name {
+  font-weight: 400;
+  color: #121212;
+}
+
+.cart-item-modifier {
+  color: #5F5F5F;
+}
+
+.cart-item-price {
+  font-size: 16px;
+  font-weight: 500;
+  color: #121212;
+}
+
+.cart-quantity-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.cart-quantity-minus {
+  background: #4F372F;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  cursor: pointer;
+
+  p {
+    margin-top: 27px;
+  }
+}
+
+.cart-quantity-number {
+  font-size: 16px;
+  font-weight: 700;
+  color: #121212;
+}
+
+.cart-quantity-plus {
+  background: #4F372F;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+
+  p {
+    margin-top: 20px;
+  }
+}
+
+.cart-total-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-top: solid 1px #DADADA;
+  background: #F8F9FA;
+}
+
+.cart-total-label {
+  font-size: 24px;
+  color: #121212;
+  font-weight: 300;
+}
+
+.cart-total-price {
+  color: #121212;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.cart-basket-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .menu-cart {
+    display: none;
+    position: absolute;
+    top: 0;
+    background: white;
+    z-index: 10;
+  }
+
+  .menu-show {
+    display: block;
+  }
+
+  .menu-hidden {
+    display: none;
+  }
+
+  .cart-basket-mobile {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #DADADA;
+    height: 94px;
+    padding-top: 53px;
+    box-sizing: border-box;
+    padding-bottom: 40px;
+  }
+
+  .cart-basket-label {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .cart-basket-close {
+    position: absolute;
+    right: 13px;
+    top: 46px;
+    font-size: 23px;
+  }
+}
+
